@@ -1,0 +1,1316 @@
+[ 2015-02-08T07:10:43+08:00 ] 192.168.0.109 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003039s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `as_posts` WHERE ( pic_news=1 ) ORDER BY post_date desc LIMIT 6   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "association_news" )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "infos" )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "notice" )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "policy" )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "exchange" )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "knowledge" )  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000338s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000627s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001975s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002208s ]
+
+[ 2015-02-08T09:44:44+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002143s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=2 )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000571s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002096s ]
+
+[ 2015-02-08T10:04:31+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002221s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0034s ]
+SQL: SELECT DISTINCT  posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( block_news=1 )  [ RunTime:2.3219s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=2 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000567s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002114s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002354s ]
+
+[ 2015-02-08T10:04:58+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002275s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( block_news=1 )  [ RunTime:2.3248s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=2 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000357s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000646s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001876s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002096s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002153s ]
+
+[ 2015-02-08T10:26:39+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002125s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( block_news=1 )  [ RunTime:0.2954s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=2 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000585s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001880s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002101s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002355s ]
+
+[ 2015-02-08T11:36:27+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002315s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title,categories.category_name FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( block_news=1 )  [ RunTime:0.3202s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=2 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000286s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000776s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002252s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003196s ]
+
+[ 2015-02-08T11:38:15+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002130s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( block_news=1 )  [ RunTime:0.2655s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=2 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000565s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002524s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002299s ]
+
+[ 2015-02-08T12:05:14+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002228s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( categories.block_news=1 )  [ RunTime:0.2657s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=2 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000574s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005122s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002406s ]
+
+[ 2015-02-08T12:05:15+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002114s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( categories.block_news=1 )  [ RunTime:0.2602s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=2 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000347s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000697s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002176s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002626s ]
+
+[ 2015-02-08T12:06:52+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002306s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( categories.block_news=2 )  [ RunTime:0.3560s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=2 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000711s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002120s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:30) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002375s ]
+
+[ 2015-02-08T12:07:30+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002163s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=2 )  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000560s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002261s ]
+
+[ 2015-02-08T12:08:02+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002121s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000573s ]
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: category_name /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: category_name /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: category_name /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: category_name /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: category_name /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002398s ]
+
+[ 2015-02-08T12:12:43+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002315s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000359s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000635s ]
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: category_name /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: category_name /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: category_name /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: category_name /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: category_name /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002260s ]
+
+[ 2015-02-08T13:01:00+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006472s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000606s ]
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002382s ]
+
+[ 2015-02-08T13:01:01+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002728s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000580s ]
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002248s ]
+
+[ 2015-02-08T13:01:24+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000153s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007960s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0041s ]
+SQL: SELECT DISTINCT  categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0068s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000571s ]
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.196974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.197243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006978s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006624s ]
+
+[ 2015-02-08T13:21:39+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002369s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000423s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000713s ]
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002210s ]
+
+[ 2015-02-08T13:26:39+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002252s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000571s ]
+NOTIC: [8] Undefined index: category_ID /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: category_ID /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: category_ID /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: category_ID /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 53 行.
+NOTIC: [8] Undefined index: category_ID /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: category_ID /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: category_ID /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+NOTIC: [8] Undefined index: category_ID /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001888s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002170s ]
+
+[ 2015-02-08T13:27:41+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002226s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0034s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=1 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=3 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000556s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002228s ]
+
+[ 2015-02-08T13:29:50+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002575s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0044s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000281s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000563s ]
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003723s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003990s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001872s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002109s ]
+
+[ 2015-02-08T13:35:28+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002327s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000571s ]
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002431s ]
+
+[ 2015-02-08T13:35:54+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002909s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0045s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0041s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0086s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000578s ]
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.145594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.145877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005137s ]
+
+[ 2015-02-08T13:35:55+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002040s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0037s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0050s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0086s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0051s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000281s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000559s ]
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002163s ]
+
+[ 2015-02-08T14:03:26+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002126s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000572s ]
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002164s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002418s ]
+
+[ 2015-02-08T14:03:55+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006527s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0047s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0065s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000426s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000752s ]
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.174339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.174809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003943s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007869s ]
+
+[ 2015-02-08T14:03:56+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002103s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000563s ]
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 71 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+NOTIC: [8] Undefined index: navigation_url /volume1/web/qzas/Application/Runtime/Cache/Home/09ccd45952ce225a1a2986a81cc5705c.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002265s ]
+
+[ 2015-02-08T14:04:17+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002126s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0039s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000339s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000634s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002081s ]
+
+[ 2015-02-08T14:06:01+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002716s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000286s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000644s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002113s ]
+
+[ 2015-02-08T14:08:58+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002605s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000564s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002099s ]
+
+[ 2015-02-08T14:08:59+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002022s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000587s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002319s ]
+
+[ 2015-02-08T14:09:59+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002390s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000559s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002353s ]
+
+[ 2015-02-08T14:13:18+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002144s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,categories.block_news FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000286s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000569s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001880s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002184s ]
+
+[ 2015-02-08T14:21:27+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002220s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000586s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002204s ]
+
+[ 2015-02-08T14:22:06+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002224s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000566s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002182s ]
+
+[ 2015-02-08T14:23:47+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002251s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0234s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000661s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002176s ]
+
+[ 2015-02-08T14:24:03+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002121s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000297s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000729s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002603s ]
+
+[ 2015-02-08T14:24:52+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002271s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0036s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000713s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.153878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.154256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002008s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002283s ]
+
+[ 2015-02-08T14:25:05+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002224s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000566s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002177s ]
+
+[ 2015-02-08T14:25:52+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003023s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000988s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001343s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002007s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002247s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:39) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:39) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:39) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002573s ]
+
+[ 2015-02-08T14:26:45+08:00 ] 192.168.0.109 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004276s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 )  [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 )  [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 )  [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000297s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000595s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002149s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:39) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:39) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /volume1/web/qzas/Application/Home/Controller/IndexController.class.php:39) /volume1/web/qzas/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002199s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002501s ]
+

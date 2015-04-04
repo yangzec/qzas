@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>附件</title>
+	<include file="./Application/Common/html/css.html"/>
+	<link rel="stylesheet" href="__PUBLIC__/Admin/css/common.css">
+	<link rel="stylesheet" href="__PUBLIC__/Admin/css/index.css">
+<include file="./Application/Admin/View/Public/header.html"/>
+	<div class="operate">
+		<div class="attach_list">
+			<table class="comment_list">
+		 		<thead>
+		 			<tr>
+			 			<th id="name">附件名</th>
+			 			<th id="count">下载量</th>
+			 			<!-- <th id="post">文章</th> -->
+		 			</tr>
+		 		</thead>
+		 		<tfoot>
+		 			<tr>
+			 			<th id="name">附件名</th>
+			 			<th id="count">下载量</th>
+		 			</tr>
+		 		</tfoot>
+		 		<tbody>
+		 			<foreach name="attach" item="vo" key="k" >
+		 				<tr>
+							<td>{$vo.comment_author}</td>
+							<td>{$vo.comment_content}</td>
+							<!-- <td>{$vo.comment_post_id}</td> -->
+			 			</tr> 
+					</foreach>		 			
+		 		</tbody>
+		 	</table>
+		</div>
+	</div>
+<include file="./Application/Admin/View/Public/footer.html"/>

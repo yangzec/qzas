@@ -1,0 +1,1756 @@
+[ 2015-01-13T16:10:31+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.035022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.035351s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0879s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0335s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003770s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.611202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.611539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.027791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.031354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031645s ]
+
+[ 2015-01-13T19:19:50+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002233s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000345s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000626s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.122635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002095s ]
+
+[ 2015-01-13T20:34:09+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002192s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_ID=categories.category_ID and relationships.post_id = posts.post_id )  [ RunTime:0.0234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000622s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002089s ]
+
+[ 2015-01-13T20:36:11+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002162s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_ID=categories.category_ID and relationships.post_id = posts.post_id )  [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000635s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002210s ]
+
+[ 2015-01-13T20:39:36+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002126s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+
+[ 2015-01-13T20:40:12+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002341s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0019s ]
+
+[ 2015-01-13T20:40:28+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002747s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000627s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002103s ]
+
+[ 2015-01-13T20:42:22+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002244s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'about' in 'where clause'
+
+[ 2015-01-13T20:42:54+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002198s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0018s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\IndexController::get_news_list(), called in /volume1/web/qzas/Application/Home/Controller/IndexController.class.php on line 10 and defined /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: arg /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2015-01-13T20:43:02+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002282s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000438s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000730s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001956s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002193s ]
+
+[ 2015-01-13T20:44:07+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002136s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_ID=2 and relationships.post_id = posts.post_id  )  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000348s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000632s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002098s ]
+
+[ 2015-01-13T20:44:41+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002119s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_ID=26 and relationships.post_id = posts.post_id  )  [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000405s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000757s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002119s ]
+
+[ 2015-01-13T20:44:42+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002840s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_ID=26 and relationships.post_id = posts.post_id  )  [ RunTime:0.0043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000340s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000622s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001914s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002480s ]
+
+[ 2015-01-13T20:44:43+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002461s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0062s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_ID=26 and relationships.post_id = posts.post_id  )  [ RunTime:0.0046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000353s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000640s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002104s ]
+
+[ 2015-01-13T20:45:23+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002238s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_ID=26 and relationships.post_id = posts.post_id  )  [ RunTime:0.0048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000348s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000635s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002485s ]
+
+[ 2015-01-13T20:46:34+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002153s ]
+
+[ 2015-01-13T20:46:43+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002129s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: arg /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2015-01-13T20:46:44+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002152s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: arg /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2015-01-13T20:47:01+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002336s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0016s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\IndexController::get_news_list(), called in /volume1/web/qzas/Application/Home/Controller/IndexController.class.php on line 10 and defined /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: arg /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2015-01-13T20:47:01+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002718s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\IndexController::get_news_list(), called in /volume1/web/qzas/Application/Home/Controller/IndexController.class.php on line 10 and defined /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: arg /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0029s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2015-01-13T20:47:02+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002042s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\IndexController::get_news_list(), called in /volume1/web/qzas/Application/Home/Controller/IndexController.class.php on line 10 and defined /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: arg /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2015-01-13T20:47:02+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002055s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\IndexController::get_news_list(), called in /volume1/web/qzas/Application/Home/Controller/IndexController.class.php on line 10 and defined /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: arg /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2015-01-13T20:47:02+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002471s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0019s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\IndexController::get_news_list(), called in /volume1/web/qzas/Application/Home/Controller/IndexController.class.php on line 10 and defined /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: arg /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2015-01-13T20:47:44+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002240s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\IndexController::get_news_list(), called in /volume1/web/qzas/Application/Home/Controller/IndexController.class.php on line 10 and defined /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0029s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categories.categoriy_id' in 'where clause'
+
+[ 2015-01-13T20:47:45+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002464s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\IndexController::get_news_list(), called in /volume1/web/qzas/Application/Home/Controller/IndexController.class.php on line 10 and defined /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categories.categoriy_id' in 'where clause'
+
+[ 2015-01-13T20:48:09+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002996s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\IndexController::get_news_list(), called in /volume1/web/qzas/Application/Home/Controller/IndexController.class.php on line 10 and defined /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categories.categoriy_ID' in 'where clause'
+
+[ 2015-01-13T20:48:10+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002046s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0017s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\IndexController::get_news_list(), called in /volume1/web/qzas/Application/Home/Controller/IndexController.class.php on line 10 and defined /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categories.categoriy_ID' in 'where clause'
+
+[ 2015-01-13T20:48:23+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002165s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\IndexController::get_news_list(), called in /volume1/web/qzas/Application/Home/Controller/IndexController.class.php on line 10 and defined /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_ID=categories.category_ID and relationships.post_id = posts.post_id  )  [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002203s ]
+
+[ 2015-01-13T20:48:38+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002196s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\IndexController::get_news_list(), called in /volume1/web/qzas/Application/Home/Controller/IndexController.class.php on line 10 and defined /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: arg /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0029s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+
+[ 2015-01-13T20:48:57+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002486s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'about' in 'where clause'
+
+[ 2015-01-13T20:48:58+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002040s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'about' in 'where clause'
+
+[ 2015-01-13T20:49:34+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002217s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'notice' in 'where clause'
+
+[ 2015-01-13T20:49:35+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002201s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0029s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'notice' in 'where clause'
+
+[ 2015-01-13T20:50:28+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002144s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'notice' in 'where clause'
+
+[ 2015-01-13T20:50:28+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002107s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'notice' in 'where clause'
+
+[ 2015-01-13T20:50:29+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002750s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'notice' in 'where clause'
+
+[ 2015-01-13T20:50:29+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002160s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'notice' in 'where clause'
+
+[ 2015-01-13T20:51:44+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002136s ]
+
+[ 2015-01-13T20:52:11+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002132s ]
+
+[ 2015-01-13T20:52:11+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002052s ]
+
+[ 2015-01-13T20:52:52+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002230s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=1 and relationships.post_id = posts.post_id )  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000350s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000636s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001975s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002182s ]
+
+[ 2015-01-13T20:53:04+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002256s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=26 and relationships.post_id = posts.post_id )  [ RunTime:0.0043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000629s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002221s ]
+
+[ 2015-01-13T20:53:45+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002147s ]
+
+[ 2015-01-13T20:53:54+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002269s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=26 and relationships.post_id = posts.post_id )  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000626s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002103s ]
+
+[ 2015-01-13T20:54:02+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002327s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=27 and relationships.post_id = posts.post_id )  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000348s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000636s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001951s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002108s ]
+
+[ 2015-01-13T20:54:15+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002166s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=47 and relationships.post_id = posts.post_id )  [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000349s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000635s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002171s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002418s ]
+
+[ 2015-01-13T20:55:13+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002394s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'notice' in 'where clause'
+
+[ 2015-01-13T20:55:20+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002217s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant notice - assumed 'notice' /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'notice' in 'where clause'
+
+[ 2015-01-13T20:55:21+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002140s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+NOTIC: [8] Use of undefined constant notice - assumed 'notice' /volume1/web/qzas/Application/Home/Controller/IndexController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'notice' in 'where clause'
+
+[ 2015-01-13T20:55:47+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002936s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'notice' in 'where clause'
+
+[ 2015-01-13T20:55:47+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002043s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'notice' in 'where clause'
+
+[ 2015-01-13T20:56:12+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002137s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "notice" )  [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000624s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002101s ]
+
+[ 2015-01-13T21:02:25+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002130s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "association_news" )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "infos" )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "notice" )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0035s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "policy" )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "exchange" )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "knowledge" )  [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000340s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000622s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002917s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002561s ]
+
+[ 2015-01-13T21:02:55+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002246s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "association_news" )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "association_news" )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "infos" )  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "notice" )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "policy" )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "exchange" )  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "knowledge" )  [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000339s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002905s ]
+
+[ 2015-01-13T21:03:11+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002221s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "association_news" )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "infos" )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "notice" )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "policy" )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "exchange" )  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "knowledge" )  [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000628s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001888s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002242s ]
+
+[ 2015-01-13T21:08:17+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002123s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "association_news" )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "infos" )  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "notice" )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "policy" )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "exchange" )  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "knowledge" )  [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000372s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000662s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002098s ]
+
+[ 2015-01-13T21:10:35+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002273s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "association_news" )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "infos" )  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "notice" )  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "policy" )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "exchange" )  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "knowledge" )  [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000368s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000655s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002231s ]
+
+[ 2015-01-13T21:52:55+08:00 ] 192.168.0.106 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002257s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "association_news" )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "infos" )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "notice" )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "policy" )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "exchange" )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "knowledge" )  [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000373s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000670s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002184s ]
+
+[ 2015-01-13T21:52:58+08:00 ] 192.168.0.106 /qzas/index.php/Index/vips
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002047s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000534s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001979s ]
+
+[ 2015-01-13T21:53:06+08:00 ] 192.168.0.106 /qzas/index.php/Index/vips
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002281s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000485s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001864s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002083s ]
+
+[ 2015-01-13T21:53:08+08:00 ] 192.168.0.106 /qzas/index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002209s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "association_news" )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "infos" )  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "notice" )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "policy" )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "exchange" )  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "knowledge" )  [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000376s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000778s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-01-13T21:53:09+08:00 ] 192.168.0.106 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002200s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002071s ]
+
+[ 2015-01-13T21:53:20+08:00 ] 192.168.0.106 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002212s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000487s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002083s ]
+
+[ 2015-01-13T21:53:22+08:00 ] 192.168.0.106 /qzas/index.php/Index/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002081s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `as_posts` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `as_posts` ORDER BY post_date desc LIMIT 0,15   [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000506s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002003s ]
+
+[ 2015-01-13T21:53:31+08:00 ] 192.168.0.106 /qzas/index.php/Index/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002194s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `as_posts` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `as_posts` ORDER BY post_date desc LIMIT 0,15   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000511s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002392s ]
+
+[ 2015-01-13T21:53:33+08:00 ] 192.168.0.106 /qzas/index.php/Index/services
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003153s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000484s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001980s ]
+
+[ 2015-01-13T21:53:47+08:00 ] 192.168.0.106 /qzas/index.php/Index/samples
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002124s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000466s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002177s ]
+
+[ 2015-01-13T21:54:18+08:00 ] 192.168.0.106 /qzas/index.php/Index/contact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002211s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000479s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001871s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002318s ]
+
+[ 2015-01-13T21:54:19+08:00 ] 192.168.0.106 /qzas/index.php/Index/magazines
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002032s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000488s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001997s ]
+
+[ 2015-01-13T21:54:19+08:00 ] 192.168.0.106 /qzas/Public/Home/css/magazines.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002589s ]
+ERR: 无法加载控制器:Public
+
+[ 2015-01-13T21:54:21+08:00 ] 192.168.0.106 /qzas/index.php/Index/trainings
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002139s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000470s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002154s ]
+
+[ 2015-01-13T21:54:22+08:00 ] 192.168.0.106 /qzas/index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002045s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "association_news" )  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "infos" )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "notice" )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "policy" )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "exchange" )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "knowledge" )  [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000364s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000645s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002006s ]
+
+[ 2015-01-13T21:54:23+08:00 ] 192.168.0.106 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003021s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000505s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001877s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001984s ]
+
+[ 2015-01-13T21:54:24+08:00 ] 192.168.0.106 /qzas/index.php/Index/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002130s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `as_posts` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `as_posts` ORDER BY post_date desc LIMIT 0,15   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000538s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002189s ]
+
+[ 2015-01-13T21:54:25+08:00 ] 192.168.0.106 /qzas/index.php/Index/services
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002040s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000482s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001922s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001989s ]
+
+[ 2015-01-13T21:54:26+08:00 ] 192.168.0.106 /qzas/index.php/Index/samples
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002029s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000474s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001978s ]
+
+[ 2015-01-13T21:54:27+08:00 ] 192.168.0.106 /qzas/index.php/Index/trainings
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002144s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001871s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002169s ]
+
+[ 2015-01-13T21:54:28+08:00 ] 192.168.0.106 /qzas/index.php/Index/vips
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002038s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000478s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001784s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001998s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001980s ]
+
+[ 2015-01-13T21:54:29+08:00 ] 192.168.0.106 /qzas/index.php/Index/magazines
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002196s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000271s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000542s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002100s ]
+
+[ 2015-01-13T21:54:29+08:00 ] 192.168.0.106 /qzas/Public/Home/css/magazines.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002569s ]
+ERR: 无法加载控制器:Public
+
+[ 2015-01-13T21:54:29+08:00 ] 192.168.0.106 /qzas/index.php/Index/contact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002048s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000567s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000856s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001983s ]
+
+[ 2015-01-13T21:55:34+08:00 ] 192.168.0.106 /qzas/index.php/Index/contact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002155s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000470s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002066s ]
+
+[ 2015-01-13T21:55:35+08:00 ] 192.168.0.106 /qzas/index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002116s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "association_news" )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "infos" )  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "notice" )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "policy" )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "exchange" )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "knowledge" )  [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000370s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000657s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001985s ]
+
+[ 2015-01-13T21:55:38+08:00 ] 192.168.0.106 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002132s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000489s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002085s ]
+
+[ 2015-01-13T21:55:39+08:00 ] 192.168.0.106 /qzas/index.php/Index/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002546s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `as_posts` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `as_posts` ORDER BY post_date desc LIMIT 0,15   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001887s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001996s ]
+
+[ 2015-01-13T21:55:46+08:00 ] 192.168.0.106 /qzas/index.php/Index/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002274s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `as_posts` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `as_posts` ORDER BY post_date desc LIMIT 0,15   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000505s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001902s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002186s ]
+
+[ 2015-01-13T21:55:48+08:00 ] 192.168.0.106 /qzas/index.php/Index/services
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002055s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000477s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001790s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002003s ]
+
+[ 2015-01-13T21:55:50+08:00 ] 192.168.0.106 /qzas/index.php/Index/samples
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002166s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000540s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002194s ]
+
+[ 2015-01-13T21:55:52+08:00 ] 192.168.0.106 /qzas/index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002026s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order<>0 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "association_news" )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "infos" )  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "notice" )  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "policy" )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "exchange" )  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  posts.post_title FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.navigation_url = "knowledge" )  [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000372s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000666s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001795s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002203s ]
+

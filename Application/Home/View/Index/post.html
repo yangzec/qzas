@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{$post['post_title']}-泉州标准化协会</title>
+	<include file="./Application/Common/html/css.html"/>
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/common.css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/post.css">
+</head>
+<body>
+	<div id="header" class="wrapper">
+		<div class="toplink">
+
+		</div>
+		<div class="nav">
+			<ul>
+				<foreach name="nav" item="vo" key="k" >   
+					<li>
+						<a <if condition="($vo.url eq '')">href="__CONTROLLER__/{$vo.navigation_url}"<else/>href="{$vo.url}"</if>>{$vo.category_name}</a>
+					</li>
+				</foreach>
+			</ul>
+		</div>
+	</div>
+	<div id="container" class="wrapper">
+		<div class="content">
+			<h2 class="post_title">
+				{$post['post_title']}
+			</h2>
+			<div class="infos">
+				时间：{$post['post_date']|date='Y-m-d h:i:s',###}
+			</div>
+			<div class="post_content">
+				{$post['post_content']}
+				<div class="comment">
+					<div class="title">评论</div>
+					<ul class="comment_list">
+						<foreach name="comment" item="vo" key="k" >   
+							<li>
+								{$vo.comment_author} 于{$vo.comment_date}留言<br/>
+								<div class="comment_content">
+									{$vo.comment_content}
+								</div>
+							</li>
+						</foreach>
+					</ul>
+					<div class="post_comment">
+						<input id="comment_author" type="text" placeholder="用户"><br>
+						<input id="comment_authro_email" type="text" placeholder="邮箱"><br>
+						<textarea name="comment_content" id="comment_content" cols="30" rows="10"></textarea>
+						<input id="post_comment" type="button" value="评论">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<include file="./Application/Home/View/Public/footer.html"/>
+	<script>
+	// $("#post_comment").click(function(event) {
+	// 	/* Act on the event */
+	// 	$.ajax({
+	// 		url: '{:U("Index/postComment")}',
+	// 		type: 'POST',
+	// 		dataType: 'json',
+	// 		data: {comment_author: $('#comment_author').val(),comment_authro_email :$('#comment_authro_email').val(), comment_content:$('#comment_content').val()},
+	// 	})
+	// 	.success(function() {
+	// 		// console.log("success");
+	// 		$("<li>"+$('#comment_author').val()+"<br/>"+$('#comment_author').val()+"</li>").appendTo('.comment .comment_list');
+	// 	})
+	// 	.fail(function() {
+	// 		console.log("error");
+	// 	})
+	// 	.always(function() {
+	// 		console.log("complete");
+	// 	});
+		
+	// });
+	</script>

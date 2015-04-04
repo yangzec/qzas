@@ -1,0 +1,60 @@
+.top{
+    border-bottom: 2px solid #e6e6e6;
+    height: 27px;
+    width: 92%;
+    padding: 0 4%;
+}
+.title{
+    color: #6b6b6b;
+    font-size: 14px;
+    line-height: 27px;
+}
+#container{
+    height: 1230px;
+}
+#container .content{
+    width: 100%;
+    left: 0px;
+    top:70px;
+}
+.block{
+    width: 100%;
+    position: relative;
+    height: 400px;
+    /*float: left;*/
+
+}
+.blockname{
+	/*border: 1px solid red;*/
+	width: 150px;
+	/*margin:0 auto;*/
+    position: absolute;
+    /*top: 20px;*/
+    /*left: 30px;*/
+	height: 50px;
+}
+.blockcontent{
+    color: #2f58b0;
+    font-size: 16px;
+    /*line-height: 36px;*/
+    top: 0px;
+    min-height: 400px;
+    width: 80%;
+    position: absolute;
+    left:200px; 
+}
+.tab-content > .active {
+    display: block;
+    height: 330px;
+    overflow: scroll;
+    visibility: visible;
+    width: 90%;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+    /*border-color:white;*/
+     border: 1px solid #ddd;
+     border-radius:4px;
+}
+.nav-tabs {
+    border-bottom: none;
+}

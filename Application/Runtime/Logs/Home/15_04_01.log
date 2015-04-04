@@ -1,0 +1,48 @@
+[ 2015-04-01T12:40:12+08:00 ] 192.168.0.118 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002208s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=0 ) ORDER BY navigation_order asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `as_posts` WHERE ( pic_news=1 ) ORDER BY post_date desc LIMIT 6   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 ) ORDER BY navigation_order asc  [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 ) ORDER BY navigation_order asc  [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 ) ORDER BY navigation_order asc  [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "association_news" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "standard_news" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0033s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "notice" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "law" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "policy" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "exchange" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "knowledge" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "bbs" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000411s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `as_setting` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `as_setting` WHERE `key` = 'icp'  [ RunTime:0.0013s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.142433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001902s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002081s ]
+

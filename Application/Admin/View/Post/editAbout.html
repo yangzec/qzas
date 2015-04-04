@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>编辑-{$post['post_title']}</title>
+	<include file="./Application/Common/html/css.html"/>
+	<link rel="stylesheet" href="__PUBLIC__/Admin/css/common.css">
+	<link rel="stylesheet" href="__PUBLIC__/Admin/css/post.css">
+<include file="./Application/Admin/View/Public/header.html"/>
+		<div class="operate">
+			<!-- <form action="" method="post"> -->
+				<!-- <input id="test" type="button" value="测试"> -->
+				<input id="title" type="text" class="title"  maxlength="35" value="{$post['post_title']}" placeholder="请输入标题">
+				<input id="submit_post" type="button" value="提交">
+				<div id="hint"></div>
+				<label for="pic_news"><input id="pic_news" type="checkbox">图片推送到首页</label>
+				<label for="block_news"><input id="block_news" type="checkbox">模块新闻</label>
+				<div class="option">
+					<div class="post_cate">
+						<ul>
+						<!-- <a href="" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">增加分类</a> -->
+							<foreach name="my_categories" item="vo" key="k" >   
+								<li>
+									{$vo.category_name}
+									<a class="del-cate" cate2del="{$vo.relation_id}">X</a>
+								</li>
+							</foreach>
+						</ul>
+						<select name="categories" id="categories2add">
+							<foreach name="categories" item="vo" key="k">
+								<option value="categories-{$vo.category_id}">
+									{$vo.category_name}
+								</option>
+							</foreach>
+						</select>
+						<a id="add_cate_relation">新增</a>
+						<input id="new_cate" type="text" placeholder="新增分类">
+						<a id="add_cate">增加</a>
+						<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+						  Launch demo modal
+						</button> -->
+					</div>
+				</div>
+				<script id="content" name="content" type="text/plain">
+					{$post['post_content']}
+				</script>
+			<!-- </form> -->
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="myModalLabel">增加分类</h4>
+	      </div>
+	      <div class="modal-body">	        
+			<input id="new_cate" type="text" placeholder="新增分类">
+			<a href="" id="add_cate">增加</a>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery/jquery-min.js">
+		
+	</script>
+    <!-- UEditor配置文件 -->
+    <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+    <!-- UEditor编辑器源码文件 -->
+    <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
+    <!-- UEditor实例化编辑器 -->
+    <script type="text/javascript">
+        var ue = UE.getEditor('content');
+        
+        // var lang = ue.getOpt('textarea');
+        // alert(lang);
+    </script>
+    <script>
+    	// $("#add_cate_relation").click(function(event) {
+    	// 	/* Act on the event */
+    	// 	$.ajax({
+    	// 		url: "{:U('POST/addCate')}",
+    	// 		type: 'default GET (Other values: POST)',
+    	// 		dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+    	// 		data: {param1: 'value1'},
+    	// 	})
+    	// 	.done(function() {
+    	// 		console.log("success");
+    	// 	})
+    	// 	.fail(function() {
+    	// 		console.log("error");
+    	// 	})
+    	// 	.always(function() {
+    	// 		console.log("complete");
+    	// 	});
+    		
+    	// });
+		
+		$('.del-cate').click(function(event) {
+			/* Act on the event */
+			$.ajax({
+				url: "{:U('Post/delCateRelation/')}",
+				type: 'POST',
+				dataType: 'json',
+				data: {cate2del: parseInt($(this).attr('cate2del'))},
+			})
+			.always(function() {
+				// console.log("complete");
+				// $(this).parent('li').remove();
+			});
+			$(this).parent('li').remove();
+		});
+    	$("#add_cate_relation").click(function(event) {
+    		/* Act on the event */  		
+    		// alert(parseInt($("#categories2add").val().substr(11,2)));
+    		category_id=parseInt($("#categories2add").val().substr(11,2));
+    		$.ajax({
+    			url: "{:U('Post/addCateRelation')}",
+    			type: 'POST',
+    			dataType: 'json',
+    			data: {cate2add: category_id}
+    		})
+    		.success(function(data) {
+    			// alert("success");  
+    			// alert($("#categories2add option:selected").text());  			
+    			$('<li>' + $("#categories2add option:selected").text() + '<a class="del-cate" cate2del="'+ data +'">X</a></li>').appendTo('#container .post_cate ul');
+    		});
+    		// .fail(function() {
+    		// 	console.log("error");
+    		// });		
+    	});
+
+    	$("#add_cate").click(function(event) {
+    		new_cate=$("#new_cate").val();
+    		$.ajax({
+    			url: "{:U('Post/addCate')}",
+    			type: 'POST',
+    			dataType: 'json',
+    			data: {category_name: new_cate},
+    		})
+    		.success(function(data) {
+    			// alert("success");    			
+    			$('<option value="categories-' + data + '>'+ new_cate +'</option>').appendTo('#categories2add');
+    		})
+    		.fail(function() {
+    			// console.log("error");
+    		});		
+		});
+
+
+		// $('#content img').click(function(event) {
+		// 		 //Act on the event 
+		// 		alert("hello");
+		// 	});
+		
+		$("#submit_post").click(function(event) {
+
+    		pic_news=$("#pic_news").prop('checked');
+    		pic_news_url='';
+    		if(pic_news){
+    			var pattern = "/Public/upload/images/[0-9]{8}/[0-9]{16}.(?:jpg|png|bmp|jpeg)";
+				//  /20150102/1420211101100418.png
+
+			    html = ue.getPlainTxt();
+
+			    if(pic_news_url=html.match(pattern)){
+			    	// alert(pic_news);
+			    	// alert(pic_news_url);
+			    }
+    		}
+			$.ajax({
+				url: '{:U("Post/saveNews")}',
+				type: 'POST',
+				dataType: 'json',
+				data: {
+					content: ue.getContent(),
+					title:$("#title").val(),
+					post_general:ue.getContentTxt(),
+					pic_news: pic_news,
+					pic_news_url:pic_news_url,
+					post_status:$("#block_news").prop('checked')
+				},
+			})
+			.success(function(data) {
+				// console.log("success");
+				alert(pic_news_url);
+				$("#hint").html("保存成功");
+			})
+			.fail(function() {
+				// console.log("error");
+			})
+			.always(function() {
+				// console.log("complete");
+			});
+			
+		});
+    </script>
+<include file="./Application/Admin/View/Public/footer.html"/>

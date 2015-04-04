@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>机构简介-泉州标准化协会</title>
+	<include file="./Application/Common/html/css.html"/>
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/common.css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/about.css">
+</head>
+<body>
+	<div id="header" class="wrapper">
+		<div class="toplink">
+
+		</div>
+		<div class="nav">
+			<ul>
+				<foreach name="nav" item="vo" key="k" >   
+					<li>
+						<a <if condition="($vo.url eq '')">href="__CONTROLLER__/{$vo.navigation_url}"<else/>href="{$vo.url}"</if>>{$vo.category_name}</a>
+					</li>
+				</foreach>
+			</ul>
+		</div>
+	</div>
+	<div id="container" class="wrapper">
+		<div class="block">
+			<div class="top">
+				<div class="title">机构概况</div>
+			</div>
+			<div class="content">
+				<ul class="nav nav-tabs nav-stacked blockname" role="tablist">
+					<foreach name="jggk" item="vo" key="k" >   
+						<li role="presentation">
+							<a href="#cate-{$vo.category_id}" role="tab" data-toggle="tab">{$vo.category_name}</a>
+						</li>
+					</foreach>
+				</ul>
+  
+				<!-- Tab panes -->
+				<div class="tab-content blockcontent">
+					<foreach name="jggk" item="vo" key="k" >  
+						<div role="tabpanel" class="tab-pane <if condition='($k eq 0)'>active
+		<else />
+		</if>" id="cate-{$vo.category_id}">{$vo.post_content}</div> 
+					</foreach>
+				</div>
+			</div>
+		</div>
+		<div class="block">
+			<div class="top">
+				<div class="title">秘书处</div>
+			</div>
+			<div class="content">
+				<ul class="nav nav-tabs nav-stacked blockname" role="tablist">
+					<foreach name="msc" item="vo" key="k" >   
+						<li role="presentation">
+							<a href="#cate-{$vo.category_id}" role="tab" data-toggle="tab">{$vo.category_name}</a>
+						</li>
+					</foreach>
+				</ul>
+  
+				<!-- Tab panes -->
+				<div class="tab-content blockcontent">
+					<foreach name="msc" item="vo" key="k" >  
+						<div role="tabpanel" class="tab-pane <if condition='($k eq 0)'>active
+		<else />
+		</if>" id="cate-{$vo.category_id}">{$vo.post_content}</div> 
+					</foreach>
+				</div>
+			</div>
+		</div>
+		<div class="block">
+			<div class="top">
+				<div class="title">标准分会</div>
+			</div>
+			<div class="content">
+				<ul class="nav nav-tabs nav-stacked blockname" role="tablist">
+					<foreach name="bzfh" item="vo" key="k" >   
+						<li role="presentation">
+							<a href="#cate-{$vo.category_id}" role="tab" data-toggle="tab">{$vo.category_name}</a>
+						</li>
+					</foreach>
+				</ul>
+  
+				<!-- Tab panes -->
+				<div class="tab-content blockcontent">
+					<foreach name="bzfh" item="vo" key="k" >  
+						<div role="tabpanel" class="tab-pane <if condition='($k eq 0)'>active
+		<else />
+		</if>" id="cate-{$vo.category_id}">{$vo.post_content}</div> 
+					</foreach>
+				</div>
+			</div>
+		</div>
+	</div>
+<include file="./Application/Home/View/Public/footer.html"/>

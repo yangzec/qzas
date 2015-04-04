@@ -1,0 +1,319 @@
+[ 2015-04-04T09:18:37+08:00 ] 192.168.0.107 /qzas/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002222s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=0 ) ORDER BY navigation_order asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `as_posts` WHERE ( pic_news=1 ) ORDER BY post_date desc LIMIT 6   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0029s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 ) ORDER BY navigation_order asc  [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 ) ORDER BY navigation_order asc  [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 ) ORDER BY navigation_order asc  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "association_news" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "standard_news" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "notice" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "law" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "policy" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0032s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "exchange" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "knowledge" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "bbs" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0051s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000427s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `as_setting` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_setting` WHERE `key` = 'icp'  [ RunTime:0.0011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.189917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.190168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002251s ]
+
+[ 2015-04-04T09:18:44+08:00 ] 192.168.0.107 /qzas/index.php/Index/post/pid/174.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002177s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=0 ) ORDER BY navigation_order asc  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_id=174 )  [ RunTime:0.0015s ]
+SQL: UPDATE `as_posts` SET `view_count`=view_count+1 WHERE ( post_id=174 ) [ RunTime:0.0205s ]
+SQL: SHOW COLUMNS FROM `as_comment` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `as_comment` WHERE ( comment_post_ID=174 and comment_approved=1 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000615s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `as_setting` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `as_setting` WHERE `key` = 'icp'  [ RunTime:0.0012s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002126s ]
+
+[ 2015-04-04T09:18:48+08:00 ] 192.168.0.107 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000173s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007707s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0046s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 ) ORDER BY navigation_order asc  [ RunTime:0.0155s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0044s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 ) ORDER BY navigation_order asc  [ RunTime:0.0177s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 ) ORDER BY navigation_order asc  [ RunTime:0.0159s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=0 ) ORDER BY navigation_order asc  [ RunTime:0.0067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `as_setting` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_setting` WHERE `key` = 'icp'  [ RunTime:0.0011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.242914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.243180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001961s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004879s ]
+
+[ 2015-04-04T09:18:59+08:00 ] 192.168.0.107 /qzas/index.php/Index/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002252s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=0 ) ORDER BY navigation_order asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `as_posts` WHERE ( post_status=0 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_status=0 ) ORDER BY post_date desc LIMIT 0,15   [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `as_setting` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_setting` WHERE `key` = 'icp'  [ RunTime:0.0011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002605s ]
+
+[ 2015-04-04T09:19:02+08:00 ] 192.168.0.107 /qzas/index.php/Index/post/pid/176.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002145s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=0 ) ORDER BY navigation_order asc  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_id=176 )  [ RunTime:0.0028s ]
+SQL: UPDATE `as_posts` SET `view_count`=view_count+1 WHERE ( post_id=176 ) [ RunTime:0.0404s ]
+SQL: SHOW COLUMNS FROM `as_comment` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `as_comment` WHERE ( comment_post_ID=176 and comment_approved=1 )  [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `as_setting` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `as_setting` WHERE `key` = 'icp'  [ RunTime:0.0012s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002310s ]
+
+[ 2015-04-04T09:19:07+08:00 ] 192.168.0.107 /qzas/index.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003036s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=0 ) ORDER BY navigation_order asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `as_posts` WHERE ( pic_news=1 ) ORDER BY post_date desc LIMIT 6   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 ) ORDER BY navigation_order asc  [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 ) ORDER BY navigation_order asc  [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 ) ORDER BY navigation_order asc  [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0031s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "association_news" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "standard_news" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "notice" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "law" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "policy" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "exchange" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "knowledge" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT  posts.post_title,posts.post_id,posts.post_date FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and posts.post_status=0 and categories.navigation_url = "bbs" ) ORDER BY post_date LIMIT 7   [ RunTime:0.0057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000409s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `as_setting` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `as_setting` WHERE `key` = 'icp'  [ RunTime:0.0011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.161586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002358s ]
+
+[ 2015-04-04T09:19:09+08:00 ] 192.168.0.107 /qzas/index.php/Index/about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002196s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 ) ORDER BY navigation_order asc  [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 ) ORDER BY navigation_order asc  [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_ID,categories.category_name,posts.post_title,posts.post_content FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 ) ORDER BY navigation_order asc  [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=0 ) ORDER BY navigation_order asc  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `as_setting` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_setting` WHERE `key` = 'icp'  [ RunTime:0.0012s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.122079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001937s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002468s ]
+
+[ 2015-04-04T09:19:10+08:00 ] 192.168.0.107 /qzas/index.php/Index/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002029s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=0 ) ORDER BY navigation_order asc  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `as_posts` WHERE ( post_status=0 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_status=0 ) ORDER BY post_date desc LIMIT 0,15   [ RunTime:0.0042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `as_setting` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `as_setting` WHERE `key` = 'icp'  [ RunTime:0.0011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002471s ]
+
+[ 2015-04-04T09:19:11+08:00 ] 192.168.0.107 /qzas/index.php/Index/services
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002066s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=0 ) ORDER BY navigation_order asc  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `as_setting` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `as_setting` WHERE `key` = 'icp'  [ RunTime:0.0011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002150s ]
+
+[ 2015-04-04T09:19:12+08:00 ] 192.168.0.107 /qzas/index.php/Index/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002395s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=0 ) ORDER BY navigation_order asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `as_posts` WHERE ( post_status=0 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_status=0 ) ORDER BY post_date desc LIMIT 0,15   [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000352s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `as_setting` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `as_setting` WHERE `key` = 'icp'  [ RunTime:0.0011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002089s ]
+

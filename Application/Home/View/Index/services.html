@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>技术服务-泉州标准化协会</title>
+	<include file="./Application/Common/html/css.html"/>
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/common.css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/services.css">
+</head>
+<body>
+	<div id="header" class="wrapper">
+		<div class="toplink">
+
+		</div>
+		<div class="nav">
+			<ul>
+				<foreach name="nav" item="vo" key="k" >   
+					<li>
+						<a <if condition="($vo.url eq '')">href="__CONTROLLER__/{$vo.navigation_url}"<else/>href="{$vo.url}"</if>>{$vo.category_name}</a>
+					</li>
+				</foreach>
+			</ul>
+		</div>
+	</div>
+	<div id="container" class="wrapper">
+	</div>
+<include file="./Application/Home/View/Public/footer.html"/>

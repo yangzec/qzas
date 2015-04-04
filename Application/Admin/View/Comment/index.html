@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>评论</title>
+	<include file="./Application/Common/html/css.html"/>
+	<link rel="stylesheet" href="__PUBLIC__/Admin/css/common.css">
+	<link rel="stylesheet" href="__PUBLIC__/Admin/css/comment.css">
+<include file="./Application/Admin/View/Public/header.html"/>
+		<div class="operate">
+			<table class="comment_list">
+		 		<thead>
+		 			<tr>
+		 				<th class="check">审批</th>
+			 			<th class="author">作者</th>
+			 			<th class="comment">评论</th>
+			 			<th class="post">文章</th>
+		 			</tr>
+		 		</thead>
+		 		<tfoot>
+		 			<tr>
+		 				<th class="check">审批</th>
+			 			<th class="author">作者</th>
+			 			<th class="comment">评论</th>
+			 			<th class="post">文章</th>
+		 			</tr>
+		 		</tfoot>
+		 		<tbody>
+		 			<foreach name="comment" item="vo" key="k" >
+		 				<tr>
+							<td><if condition='($vo.comment_approved eq 0)'><a class="approve" href="{:U('Comment/approve',array('cid'=>$vo['comment_id']))}">批准</a><else/><a class="cancel" href="{:U('Comment/cancel',array('cid'=>$vo['comment_id']))}">撤销</a></if></td>
+							<td>{$vo.comment_author}</td>
+							<td>提交于{$vo.comment_date}<br>{$vo.comment_content}</td>
+							<td><a href="__ROOT__/index.php/Index/post/pid/{$vo['post_id']}">{$vo.post_title}</a></td>
+			 			</tr> 
+					</foreach>		 			
+		 		</tbody>
+		 	</table>
+		 	{$page}
+		</div>		
+<include file="./Application/Admin/View/Public/footer.html"/>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>设置</title>
+	<include file="./Application/Common/html/css.html"/>
+	<link rel="stylesheet" href="__PUBLIC__/Admin/css/common.css">
+	<link rel="stylesheet" href="__PUBLIC__/Admin/css/index.css">
+<include file="./Application/Admin/View/Public/header.html"/>
+	<div class="operate">
+		<div class="site_name">
+			<div class="title">
+				站名：
+			</div>
+			<input id="site_name" type="text" value="{$site_name.value}">
+		</div>		
+		<div class="icp">
+			<div class="title">
+				ICP备案号：
+			</div>
+			<input id="icp" type="text" value="{$icp.value}">
+		</div>
+		<div class="set_navigation">
+			<div class="title">首页导航</div>
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<foreach name="nav" item="vo" key="k" >   
+					<li role="presentation">
+						<a href="#{$vo.navigation_url}" data-toggle="tab">{$vo.category_name}</a>
+					</li>
+				</foreach>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<foreach name="nav" item="vo" key="k" >  
+					<div role="tabpanel" class="tab-pane" id="{$vo.navigation_url}"><input class="nav-{$vo.category_id}-name" type="text" value="{$vo.category_name}"><input class="nav-{$vo.category_id}-nav_url" type="text" value="{$vo.navigation_url}"><input class="nav-{$vo.category_id}-url" type="text" value="{$vo.url}"><input class="updatenav" data-id="nav-{$vo.category_id}" type="button" value="更新"></div>
+				</foreach>
+			</div>
+
+			<!-- <select>
+				<foreach name="nav" item="vo" key="k" >   
+					<option>
+						{$vo.category_name}
+					</option>
+				</foreach>
+			</select> -->
+		</div>
+		<div class="set_column">
+			<div class="title">首页栏目</div>
+		</div>
+		<div class="set_block">
+			<div class="title">模块内容</div>
+			 <h3>
+			 	机构概况
+			 </h3>
+			 <ul>
+			 	<foreach name="jggk" item="vo" key="k" >   
+						<li role="presentation">
+							<a href="{:U('Admin/Post/editPost',array('pid'=>$vo['post_id']))}">{$vo.category_name}</a>
+						</li>
+					</foreach>
+			 </ul>
+			 <h3>
+			 	秘书处
+			 </h3>
+			 <ul>
+			 	<foreach name="msc" item="vo" key="k" >   
+						<li role="presentation">
+							<a href="{:U('Admin/Post/editPost',array('pid'=>$vo['post_id']))}">{$vo.category_name}</a>
+						</li>
+					</foreach>
+			 </ul>
+			 <h3>
+			 	标准分会
+			 </h3>
+			 <ul>
+			 	<foreach name="bzfh" item="vo" key="k" >   
+						<li role="presentation">
+							<a href="{:U('Admin/Post/editPost',array('pid'=>$vo['post_id']))}">{$vo.category_name}</a>
+						</li>
+					</foreach>
+			 </ul>
+		</div>
+	</div>
+<include file="./Application/Admin/View/Public/footer.html"/>
+	<script>
+	$(".updatenav").click(function(event) {
+		/* Act on the event */
+		$.ajax({
+			url: '{:U("Setting/updateNav")}',
+			type: 'POST',
+			dataType: 'json',
+			data: {
+				category_id : parseInt($(this).attr('data-id').substring(4)),
+				category_name: $('.'+$(this).attr('data-id')+'-name').val(),
+				navigation_url : $('.'+$(this).attr('data-id')+'-nav_url').val(),
+				url:$('.'+$(this).attr('data-id')+'-url').val(),
+			} 
+		})
+		.success(function() {
+			// console.log("success");
+			// $("<li>"+$('#comment_author').val()+"|"+$('#comment_author').val()+"</li>").appendTo('.comment .comment_list');
+			alert('success');
+		})
+		.fail(function() {
+			console.log("error");
+		})
+		.always(function() {
+			console.log("complete");
+		});
+		// alert(parseInt($(this).attr('data-id').substring(4)));
+	});
+	</script>

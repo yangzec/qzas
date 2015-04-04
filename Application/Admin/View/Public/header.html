@@ -1,0 +1,22 @@
+ </head>
+ <body>
+	<div id="header">
+		<ul>
+			<li><a href="__ROOT__">QZAS</a></li>
+			<li><a href="__ROOT__">站点</a></li>
+		</ul>
+		<div class="user">
+			你好，{$username}，<a href="{:U('Index/logout')}">退出</a>
+		</div>
+	</div>
+	<div id="container">
+		<div class="sidemenu">
+			<ul>
+				<li><a href="{:U('Index/index')}">基本</a></li>
+				<li><a href="{:U('Post/index')}">文章</a></li>
+				<li><a href="{:U('Comment/index')}">评论</a></li>
+				<!-- <li><a href="{:U('Attach/index')}">附件</a></li> -->
+				<!-- <li><a href="{:U('User/index')}">用户</a></li> -->
+				<li><a href="{:U('Setting/index')}">设置</a></li>
+			</ul>
+		</div>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页-泉州标准化协会</title>
+	<include file="./Application/Common/html/css.html"/>
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/common.css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/index.css">
+</head>
+<body>
+	<div id="header" class="wrapper">
+		<div class="toplink">
+
+		</div>
+		<div class="nav">
+			<ul>
+				<foreach name="nav" item="vo" key="k" >   
+					<li>
+						<a href="__CONTROLLER__/{$vo.navigation_url}">{$vo.category_name}</a>
+					</li>
+				</foreach>
+			</ul>
+		</div>
+		<div class="login">
+			<form action="">邮箱登陆入口：<input type="text"><input type="submit" value="登陆"></form>
+		</div>
+	</div>
+	<div id="container" class="wrapper">
+		<div class="sidebar">			
+			<div class="general">
+				<div class="title">
+					协会概况
+				</div>
+				<ul>
+					<li><a href="">协会简介</a></li>
+					<li><a href="">协会章程</a></li>
+					<li><a href="">组织机构</a></li>
+					<li><a href="">交通位置图</a></li>
+				</ul>
+			</div>
+			<div class="secretary">
+				<div class="title">
+					秘书处
+				</div>
+				<ul>
+					<li><a href="">行政部</a></li>
+					<li><a href="">标准咨询处</a></li>
+					<li><a href="">编码服务部</a></li>
+					<li><a href="">标准培训部</a></li>
+					<li><a href="">项目合作部</a></li>
+				</ul>
+			</div>
+			<div class="branch">
+				<div class="title">
+					标准分会
+				</div>
+				<ul>
+					<li><a href="">纺织服装标准分会</a></li>
+					<li><a href="">制鞋皮革标准分会</a></li>
+					<li><a href="">机械电子标准分会</a></li>
+					<li><a href="">化工塑料标准分会</a></li>
+					<li><a href="">食品包装标准分会</a></li>
+					<li><a href="">条码技术与应用分会</a></li>
+					<li><a href="">墙体材料标准分会</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="pic_news">
+				<div class="title">
+					图片新闻
+				</div>
+				<div id="pic_news" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				  	<foreach name="pic_news" item="vo" key="k">
+				    	<li data-target="#pic_news" data-slide-to="{$k}" <if condition="($k eq 0)">class="active"
+		<else />
+		</if>"</li>
+				  	</foreach>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				  	<foreach name="pic_news" item="vo" key="k">
+				  		<div class="item 
+		<if condition="($k eq 0)">active
+		<else />
+		</if>">
+					      <img src="__ROOT__{$vo.pic_news_url}" alt="...">
+					      <div class="carousel-caption">					        
+							{$vo.post_general}[查看全文]
+					      </div>
+					    </div>
+				  	</foreach>
+				  </div>
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#pic_news" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#pic_news" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</div>
+			<div class="association_news block">
+				<div class="title">
+					协会新闻
+				</div>
+				<ul>
+					<foreach name="notice" item="vo" key="k" >   
+						<li>
+							<a href="{:U('Index/post',array('pid'=>$vo['post_id']))}">{$vo.post_title}</a>
+						</li>
+					</foreach>
+				</ul>
+			</div>
+			<div class="infos block">
+				<div class="title">
+					标准化信息
+				</div>
+				<ul>
+					<foreach name="infos" item="vo" key="k" >   
+						<li>
+							<a href="{:U('Index/post',array('pid'=>$vo['post_id']))}">{$vo.post_title}</a>
+						</li>
+					</foreach>
+				</ul>
+			</div>
+			<div class="notice block">
+				<div class="title">
+					协会通知
+				</div>
+				<ul>
+					<foreach name="notice" item="vo" key="k" >   
+						<li>
+							<a href="{:U('Index/post',array('pid'=>$vo['post_id']))}">{$vo.post_title}</a>
+						</li>
+					</foreach>
+				</ul>
+			</div>
+			<div class="policy block">
+				<div class="title">
+					标准化政策
+				</div>
+				<ul>
+					<foreach name="policy" item="vo" key="k" >   
+						<li>
+							<a href="{:U('Index/post',array('pid'=>$vo['post_id']))}">{$vo.post_title}</a>
+						</li>
+					</foreach>
+				</ul>
+			</div>
+			<div class="exchange block">
+				<div class="title">
+					协会对外交流
+				</div>
+				<ul>
+					<foreach name="exchange" item="vo" key="k" >   
+						<li>
+							<a href="{:U('Index/post',array('pid'=>$vo['post_id']))}">{$vo.post_title}</a>
+						</li>
+					</foreach>
+				</ul>
+			</div>
+			<div class="knowledge block">
+				<div class="title">
+					标准化知识
+				</div>
+				<ul>
+					<foreach name="knowledge" item="vo" key="k" >   
+						<li>
+							<a href="{:U('Index/post',array('pid'=>$vo['post_id']))}">{$vo.post_title}</a>
+						</li>
+					</foreach>
+				</ul>
+			</div>
+			<div class="links">
+				<div class="title">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+<include file="./Application/Home/View/Public/footer.html"/>
+<script>
+	$('#pic_news').carousel();
+</script>

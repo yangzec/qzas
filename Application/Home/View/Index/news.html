@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>资讯动态-泉州标准化协会</title>
+	<include file="./Application/Common/html/css.html"/>
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/common.css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/news.css">
+</head>
+<body>
+	<div id="header" class="wrapper">
+		<div class="toplink">
+
+		</div>
+		<div class="nav">
+			<ul>
+				<foreach name="nav" item="vo" key="k" >   
+					<li>
+						<a <if condition="($vo.url eq '')">href="__CONTROLLER__/{$vo.navigation_url}"<else/>href="{$vo.url}"</if>>{$vo.category_name}</a>
+					</li>
+				</foreach>
+			</ul>
+		</div>
+	</div>
+	<div id="container" class="wrapper">
+		
+		<div class="subnav">			
+			<div class="general">
+				<div class="title">
+					协会概况
+				</div>
+				<ul>
+					<li><a href="">协会简介</a></li>
+					<li><a href="">协会章程</a></li>
+					<li><a href="">组织机构</a></li>
+					<li><a href="">交通位置图</a></li>
+				</ul>
+			</div>
+			<div class="secretary">
+				<div class="title">
+					秘书处
+				</div>
+				<ul>
+					<li><a href="">行政部</a></li>
+					<li><a href="">标准咨询处</a></li>
+					<li><a href="">编码服务部</a></li>
+					<li><a href="">标准培训部</a></li>
+					<li><a href="">项目合作部</a></li>
+				</ul>
+			</div><!-- 
+			<div class="branch">
+				<div class="title">
+					标准分会
+				</div>
+				<ul>
+					<li><a href="">纺织服装标准分会</a></li>
+					<li><a href="">制鞋皮革标准分会</a></li>
+					<li><a href="">机械电子标准分会</a></li>
+					<li><a href="">化工塑料标准分会</a></li>
+					<li><a href="">食品包装标准分会</a></li>
+					<li><a href="">条码技术与应用分会</a></li>
+					<li><a href="">墙体材料标准分会</a></li>
+				</ul>
+			</div> -->
+		</div>
+		<div class="content">
+			<div class="title">
+				资讯动态
+			</div>			
+	 		<ul class="news_list">
+	 			<foreach name="posts" item="vo" key="k" >
+	 				<li><a href="{:U('Index/post',array('pid'=>$vo['post_id']))}">{$vo.post_title}<span class="time">{$vo.post_date|date='Y-m-d H:i:s',###}</span></a></li>
+				</foreach>	
+	 		</ul>
+		</div>
+ 		<div class="page">{$Page}</div>
+	</div>
+<include file="./Application/Home/View/Public/footer.html"/>

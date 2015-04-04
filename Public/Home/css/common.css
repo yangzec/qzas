@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+body{
+	background-color: #EEF0FA;
+}
+.wrapper{
+	width:1000px;
+	margin:0 auto;
+	/*padding: 20px 0;*/
+	/*padding: 0 30px;*/
+	background-color: white;
+	border: 1px solid #FFF;
+}
+#header{
+	height: 130px;
+	background: url(../images/topbar.gif) no-repeat;
+	position: relative;
+	/*border: 1px solid red;*/
+}
+#header .nav {	
+    background-color: #31588e;
+    /*border: 1px solid yellow;*/
+    bottom: 0px;
+    height: 33px;
+    margin: 0 0;
+    padding-left: 2%;
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+}
+#header .nav ul{
+	position: absolute;
+
+}
+#header .nav li{	
+	float:left;
+	/*border:1px solid blue;*/
+	margin:0 5px;
+}
+#header .nav a{
+	display: block;
+	/*width:100px;*/
+	height: 33px; 
+	padding: 0 10px;
+	line-height: 33px;
+	color: white;
+}
+#header .nav a:hover{
+	background-color:#5d92d8; 
+}
+#container {
+	margin-top: 10px;
+	/*height: 980px;*/
+	position: relative;
+}
+#container .subnav{
+	/*border: 1px solid yellow;*/
+	width: 14%;
+	/*float: left;*/
+	padding: 10px 0;
+	position: absolute;
+	top: 32px;
+	background-color: #e6e9fb;
+}
+#container.wrapper{
+	padding: 20px 0;
+}
+#container .content{
+	width: 85%;
+	/*float: left;*/
+	position: absolute;
+	right: 5px;
+	top: 32px;
+}
+#footer{
+	border-top: 5px solid #3b669f; 
+	margin-top: 20px;
+    /*height: 55px;*/
+    /*line-height: 55px;*/
+}

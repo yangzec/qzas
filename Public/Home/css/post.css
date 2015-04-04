@@ -1,0 +1,37 @@
+#container .post_title{
+	text-align: center;
+	border-bottom: 2px dotted gray;
+}
+#container .infos{
+	text-align: center;
+}
+#container .content{
+	position: relative;
+	width:95%;
+	margin:0 auto;
+}
+#container .comment{
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px dotted gray;
+}
+#container .post_title{
+  	color: #315990;
+    font-size: 18px;
+    text-align: center;
+}
+#container .post_content{
+	margin:0 auto;
+	width: 80%;
+}
+.comment_list li{
+	border-top: 1px dotted black;
+}
+.comment_content{
+	color: gray;
+}
+.comment .title{
+	font-size: 30px;
+	width: 60px;
+	margin: 0 auto
+}

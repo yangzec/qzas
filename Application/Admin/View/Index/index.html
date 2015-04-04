@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>基本</title>
+	<include file="./Application/Common/html/css.html"/>
+	<link rel="stylesheet" href="__PUBLIC__/Admin/css/common.css">
+	<link rel="stylesheet" href="__PUBLIC__/Admin/css/index.css">
+<include file="./Application/Admin/View/Public/header.html"/>
+		<div class="operate">			
+			<div class="infos">
+				上次登陆IP：{$ip}
+				登陆时间：{$last_time}
+				<!-- 登陆地址：{$username} -->
+			</div>
+			<div class="recent">
+				<div class="title">
+					最近发布
+				</div>
+				<ul>
+					<foreach name="posts" item="vo" key="k" >   
+						<li>
+							<a href="{:U('Admin/Post/editPost',array('pid'=>$vo['post_id']))}"><span class="date">{$vo.post_date}</span><span class="title">{$vo.post_title}</span></a>
+						</li>
+					</foreach>
+				</ul>
+			</div>
+			<div class="comments">
+				<div class="title">最近评论</div>
+				<ul>					
+					<foreach name="comment" item="vo" key="k" >   
+						<li>
+							由{$vo.comment_author}发表在<a href="{:U('Admin/Post/editPost',array('pid'=>$vo['post_id']))}">{$vo.post_title}</a> <br>
+							{$vo.comment_content} <if condition="$vo.comment_approved eq 0"><a class="approve" id="comment-{$vo.comment_id}" href="{:U('Admin/Index/approve_comment',array('cid'=>$vo['comment_id']))}">批准</a></if>
+						</li>
+					</foreach>
+				</ul>
+			</div>
+		</div>
+	</div>
+<include file="./Application/Admin/View/Public/footer.html"/>
