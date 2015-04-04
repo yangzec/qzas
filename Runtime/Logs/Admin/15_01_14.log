@@ -1,0 +1,227 @@
+[ 2015-01-14T21:16:11+08:00 ] 192.168.0.107 /qzas/admin.php?m=Admin&c=Post&a=postNews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002160s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order=0 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000642s ]
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.190058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.190547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003190s ]
+
+[ 2015-01-14T21:53:15+08:00 ] 192.168.0.106 /qzas/admin.php?m=Admin&c=Post&a=editPost&pid=110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002332s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_id = 110 )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order=0 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  categories.category_name,categories.category_id,relationships.relation_id FROM as_categories_relationships relationships,as_categories categories WHERE ( relationships.category_ID=categories.category_ID and relationships.post_id = 110 )  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000402s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000785s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.158724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.159020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002287s ]
+
+[ 2015-01-14T22:36:15+08:00 ] 192.168.0.106 /qzas/admin.php?m=Admin&c=Post&a=editPost&pid=110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002349s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_id = 110 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order=0 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0028s ]
+SQL: SELECT DISTINCT  categories.category_name,categories.category_id,relationships.relation_id FROM as_categories_relationships relationships,as_categories categories WHERE ( relationships.category_ID=categories.category_ID and relationships.post_id = 110 )  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000383s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000674s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002420s ]
+
+[ 2015-01-14T22:37:35+08:00 ] 192.168.0.106 /qzas/admin.php?m=Admin&c=Post&a=addNews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002182s ]
+NOTIC: [8] Uninitialized string offset: 0 /volume1/web/qzas/Application/Admin/Controller/PostController.class.php 第 60 行.
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0040s ]
+SQL: INSERT INTO `as_posts` (`post_author`,`post_content`,`post_general`,`post_date`,`post_date_gmt`,`post_title`,`pic_news`,`pic_news_url`,`post_status`) VALUES ('1','<p>					</p><p style=\"line-height:28px\"><span style=\"font-size: 14px\">建设单位：</span> <span style=\"font-size: 14px\">（以下简称甲方）</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> </span><span style=\"font-size: 14px\">承建单位：</span><span style=\"font-size: 14px;font-family: Simsun, serif\"> (</span><span style=\"font-size: 14px\">以下简称乙方</span><span style=\"font-size: 14px;font-family: Simsun, serif\">)<br/> <br/> </span><span style=\"font-size: 14px\">经甲乙双方充分协商，甲方将下列景观工程任务委托乙方进行施工承包，为明确双方责任，特制定本合同，希共同遵守。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> <br/> </span><span style=\"font-size: 14px\">一、工程名称及建设地点：</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> 1</span><span style=\"font-size: 14px\">、</span> <span style=\"font-size: 14px\">工程名称：</span><span style=\"font-size: 14px;font-family: Simsun, serif\">xxxxxxx<br/> 2</span><span style=\"font-size: 14px\">、</span> <span style=\"font-size: 14px\">建设地点：</span><span style=\"font-size: 14px;font-family: Simsun, serif\">xxxxxxx<br/> <br/> </span><span style=\"font-size: 14px\">二、工程范围：</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> </span><span style=\"font-size: 14px\">按招标图纸及工程量清单所含的园建、景观、绿化工程</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> <br/> </span><span style=\"font-size: 14px\">三、工程总造价：</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> </span><span style=\"font-size: 14px\">合同总价含</span> <span style=\"font-size: 14px\">费用确定合同价款为人民币（</span> <span style=\"font-size: 14px\">人民</span> <span style=\"font-size: 14px\">币）</span> <span style=\"font-size: 14px\">￥</span> <span style=\"font-size: 14px\">元</span> <span style=\"font-size: 14px\">，大写：</span> <span style=\"font-size: 14px\">佰</span> <span style=\"font-size: 14px\">拾</span> <span style=\"font-size: 14px\">万</span> <span style=\"font-size: 14px\">佰</span> <span style=\"font-size: 14px\">拾</span> <span style=\"font-size: 14px\">元</span> <span style=\"font-size: 14px\">角</span> <span style=\"font-size: 14px\">分）。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> </span><span style=\"font-size: 14px\">四、工期：</span> <span style=\"font-size: 14px\">年</span> <span style=\"font-size: 14px\">月</span> <span style=\"font-size: 14px\">日至</span> <span style=\"font-size: 14px\">年</span> <span style=\"font-size: 14px\">月</span> <span style=\"font-size: 14px\">日，共计叁年</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> <br/> </span><span style=\"font-size: 14px\">五、</span> <span style=\"font-size: 14px\">承包方式：包工包料。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> <br/> </span><span style=\"font-size: 14px\">六、甲乙双方负责完成的工作：</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> a) </span><span style=\"font-size: 14px\">甲方负责完成的工作：</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> i. </span><span style=\"font-size: 14px\">在开工前三天内完成</span><span style=\"font-size: 14px;font-family: Simsun, serif\">“</span><span style=\"font-size: 14px\">三通一平</span><span style=\"font-size: 14px;font-family: Simsun, serif\">”</span><span style=\"font-size: 14px\">（包括进场道路）接通水、电，提供材料和工具存放仓库，为乙方人员的住宿及现场办公提供方便。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> ii. </span><span style=\"font-size: 14px\">甲方委派</span> <span style=\"font-size: 14px\">许志敏</span> <span style=\"font-size: 14px\">同志为工地代表，对工程进度、工程质量进行监理、督促乙方按规定搞好各项技术资料报表整理及处理其它事宜。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> b) </span><span style=\"font-size: 14px\">乙方负责完成的工作：</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> i. </span><span style=\"font-size: 14px\">乙方负责的绿化景观设计在开工前三天内完成组织施工图会审、编制详细的施工计划，并送交甲方，经甲方确认后，作为乙方施工及甲方检查监督执行施工进度的依据。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> ii. </span><span style=\"font-size: 14px\">保质、保量，按时完成所承包的工程项目，服从甲方现场人员及监理的指导。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> iii. </span><span style=\"font-size: 14px\">自觉遵守甲方的有关规定，爱护公物，不损坏甲方设施。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> <br/> </span><span style=\"font-size: 14px\">七、乙方必须严格按照设计施工图纸，施工技术规范进行施工。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> </span><span style=\"font-size: 14px\">因乙方擅自变更设计发生的费用及由此造成甲方的损失均由乙方负责。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> <br/> </span><span style=\"font-size: 14px\">八、工程验收：</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> a) </span><span style=\"font-size: 14px\">工程竣工后，甲方根据双方确认工程预算，设计施工图纸及国家相关施工技术规范进行验收，如有出入或施工质量问题，由乙方负责无偿返工，直到符合要求为止。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> b) </span><span style=\"font-size: 14px\">工程竣工验收通过后，双方在竣工工程验收证明书上盖章，同时乙方将全部技术档案资料移交给甲方。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> c) </span><span style=\"font-size: 14px\">该工程养护期为三年，如在养护期内出现质量问题，甲方立即通知乙方，由乙方在接到通知十天内派出人员进行处理。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> d)</span><span style=\"font-size: 14px\">本工程至</span> <span style=\"font-size: 14px\">年</span> <span style=\"font-size: 14px\">月</span> <span style=\"font-size: 14px\">日，苗木成活率为</span><span style=\"font-size: 14px;font-family: Simsun, serif\">100%</span><span style=\"font-size: 14px\">。期间，乙方应对死亡的苗木进行补植。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> <br/> </span><span style=\"font-size: 14px\">九、</span> <span style=\"font-size: 14px\">其他事项：</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> a) </span><span style=\"font-size: 14px\">在施工中，乙方应建立安全防护措施，安全施工、文明施工，否则，因此造成的一切人身事故和其他损失均由乙方负责。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> b) </span><span style=\"font-size: 14px\">乙方负责办理进出的一切手续，其他对外手续由甲乙方共同办理。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> <br/> </span><span style=\"font-size: 14px\">十、本合同和施工设计图、工程项目预算以及共同认可的附件共同组合文件，并具有同等的法律效力，乙方施工设计图、工程预算均经甲方认可后，方能正式开</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> </span><span style=\"font-size: 14px\">始施工。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> <br/> </span><span style=\"font-size: 14px\">十一、本合同自签订之日起生效，到甲乙双方履行所有合同义务，竣工结算价款支付完毕，乙方向甲方交付竣工工程后，本合同即告终止。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> <br/> </span><span style=\"font-size: 14px\">十二、本合同未尽事宜，共同协商解决，双方签订的其他条文同具法律效力。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> </span><span style=\"font-size: 14px\">本合同正本一式两份，双方各执一份，副本二份，双方各执一份，具有同等法律效力。</span><span style=\"font-size: 14px;font-family: Simsun, serif\"><br/> <br/> <br/> <br/> </span><span style=\"font-size: 14px\">甲方：</span><span style=\"font-size: 14px;font-family: Simsun, serif\">xxxxxxx </span><span style=\"font-size: 14px\">乙方：</span><span style=\"font-size: 14px;font-family: Simsun, serif\">xxxxxxx<br/> </span><span style=\"font-size: 14px\">代表：</span><span style=\"font-size: 14px;font-family: Simsun, serif\">____ ______ ______ </span><span style=\"font-size: 14px\">代表：</span><span style=\"font-size: 14px;font-family: Simsun, serif\">___________________ ______</span></p><p style=\"line-height:28px\"><span style=\"font-size: 14px\">签约地点：</span><span style=\"font-size: 14px;font-family: Simsun, serif\">_________ __________<br/> </span><span style=\"font-size: 14px\">签约时间：</span><span style=\"font-size: 14px;font-family: Simsun, serif\">___ ___</span><span style=\"font-size: 14px\">年</span><span style=\"font-size: 14px;font-family: Simsun, serif\">__ __</span><span style=\"font-size: 14px\">月</span><span style=\"font-size: 14px;font-family: Simsun, serif\">_______</span><span style=\"font-size: 14px\">日</span></p><p>&nbsp;</p><p><br/></p><p>				</p>','					建设单位： （以下简称甲方） 承建单位： (以下简称乙方)  经甲乙双方充分协商，甲方将下列景观工程任务委托乙方进行施工承包，为明确双方责任，特制定本合同，希共同遵守。  一、工程名称及建设地点： 1、 工程名称：xxxxxxx 2、 建设地点：xxxxxxx  二、工程范围： 按招标图纸及工程量清单所含的园建、景观、绿化工程  三、工程总造价： 合同总价含 费用确定合同价款为人民币（ 人民 币） ￥ 元 ，大写： 佰 拾 万 佰 拾 元 角 分）。 四、工期： 年 月 日至 年 月 日，共计叁年  五、 承包方式：包工包料。  六、甲乙双方负责完成的工作： a) 甲方负责完成的工作： i. 在开工前三天内完成“三通一平”（包括进场道路）接通水、电，提供材料和工具存放仓库，为乙方人员的住宿及现场办公提供方便。 ii. 甲方委派 许志敏 同志为工地代表，对工程进度、工程质量进行监理、督促乙方按规定搞好各项技术资料报表整理及处理其它事宜。 b) 乙方负责完成的工作： i. 乙方负责的绿化景观设计在开工前三天内完成组织施工图会审、编制详细的施工计划，并送交甲方，经甲方确认后，作为乙方施工及甲方检查监督执行施工进度的依据。 ii. 保质、保量，按时完成所承包的工程项目，服从甲方现场人员及监理的指导。 iii. 自觉遵守甲方的有关规定，爱护公物，不损坏甲方设施。  七、乙方必须严格按照设计施工图纸，施工技术规范进行施工。 因乙方擅自变更设计发生的费用及由此造成甲方的损失均由乙方负责。  八、工程验收： a) 工程竣工后，甲方根据双方确认工程预算，设计施工图纸及国家相关施工技术规范进行验收，如有出入或施工质量问题，由乙方负责无偿返工，直到符合要求为止。 b) 工程竣工验收通过后，双方在竣工工程验收证明书上盖章，同时乙方将全部技术档案资料移交给甲方。 c) 该工程养护期为三年，如在养护期内出现质量问题，甲方立即通知乙方，由乙方在接到通知十天内派出人员进行处理。 d)本工程至 年 月 日，苗木成活率为100%。期间，乙方应对死亡的苗木进行补植。  九、 其他事项： a) 在施工中，乙方应建立安全防护措施，安全施工、文明施工，否则，因此造成的一切人身事故和其他损失均由乙方负责。 b) 乙方负责办理进出的一切手续，其他对外手续由甲乙方共同办理。  十、本合同和施工设计图、工程项目预算以及共同认可的附件共同组合文件，并具有同等的法律效力，乙方施工设计图、工程预算均经甲方认可后，方能正式开 始施工。  十一、本合同自签订之日起生效，到甲乙双方履行所有合同义务，竣工结算价款支付完毕，乙方向甲方交付竣工工程后，本合同即告终止。  十二、本合同未尽事宜，共同协商解决，双方签订的其他条文同具法律效力。 本合同正本一式两份，双方各执一份，副本二份，双方各执一份，具有同等法律效力。    甲方：xxxxxxx 乙方：xxxxxxx 代表：____ ______ ______ 代表：___________________ ______签约地点：_________ __________ 签约时间：___ ___年__ __月_______日 				','2015-01-14 22:37:35','2015-01-14 14:37:35','建设单位','0','','1') [ RunTime:0.1037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002456s ]
+
+[ 2015-01-14T22:37:38+08:00 ] 192.168.0.106 /qzas/admin.php?m=Admin&c=Post&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002168s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `as_posts` LIMIT 1   [ RunTime:0.0153s ]
+SQL: SELECT * FROM `as_posts` LIMIT 0,15   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000804s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002406s ]
+
+[ 2015-01-14T22:37:40+08:00 ] 192.168.0.106 /qzas/admin.php?m=Admin&c=Post&a=postNews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004818s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order=0 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001358s ]
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 51 行.
+NOTIC: [8] Undefined index: categories_id /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+NOTIC: [8] Undefined index: categories_name /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002372s ]
+
+[ 2015-01-14T22:37:53+08:00 ] 192.168.0.106 /qzas/admin.php?m=Admin&c=Post&a=addNews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002189s ]
+NOTIC: [8] Uninitialized string offset: 0 /volume1/web/qzas/Application/Admin/Controller/PostController.class.php 第 60 行.
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0043s ]
+SQL: INSERT INTO `as_posts` (`post_author`,`post_content`,`post_general`,`post_date`,`post_date_gmt`,`post_title`,`pic_news`,`pic_news_url`,`post_status`) VALUES ('1','<p>大家哈哈哈大家哈哈哈大家哈哈哈大家哈哈哈</p><div id=\"xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd\"></div>','大家哈哈哈大家哈哈哈大家哈哈哈大家哈哈哈','2015-01-14 22:37:52','2015-01-14 14:37:52','大家哈哈哈','0','','1') [ RunTime:0.0882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002491s ]
+
+[ 2015-01-14T22:39:35+08:00 ] 192.168.0.106 /qzas/admin.php?m=Admin&c=Post&a=editPost&pid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002484s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_id = 2 )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order=0 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0037s ]
+SQL: SELECT DISTINCT  categories.category_name,categories.category_id,relationships.relation_id FROM as_categories_relationships relationships,as_categories categories WHERE ( relationships.category_ID=categories.category_ID and relationships.post_id = 2 )  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000477s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000773s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002292s ]
+

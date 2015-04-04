@@ -1,0 +1,301 @@
+[ 2015-02-10T12:25:44+08:00 ] 192.168.0.109 /qzas/admin.php?m=Admin&c=Post&a=editPost&pid=110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002245s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_id = 110 )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=2 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0024s ]
+SQL: SELECT DISTINCT  categories.category_name,categories.category_id,relationships.relation_id FROM as_categories_relationships relationships,as_categories categories WHERE ( relationships.category_ID=categories.category_ID and relationships.post_id = 110 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000372s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000657s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002755s ]
+
+[ 2015-02-10T12:27:02+08:00 ] 192.168.0.109 /qzas/admin.php?m=Admin&c=Post&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002328s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `as_posts` WHERE ( post_status=0 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_status=0 ) ORDER BY post_date desc LIMIT 0,15   [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000261s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000542s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001877s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002150s ]
+
+[ 2015-02-10T12:27:11+08:00 ] 192.168.0.109 /qzas/admin.php?m=Admin&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000486s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002146s ]
+
+[ 2015-02-10T12:27:15+08:00 ] 192.168.0.109 /qzas/admin.php?m=Admin&c=Setting&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002130s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=0 ) ORDER BY navigation_order  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `as_setting` [ RunTime:0.0214s ]
+SQL: SELECT * FROM `as_setting` WHERE `key` = 'icp'  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `as_setting` WHERE `key` = 'site_name'  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_name,posts.post_title,posts.post_id FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=2 ) ORDER BY navigation_order asc  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0027s ]
+SQL: SELECT DISTINCT  categories.category_name,posts.post_title,posts.post_id FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=1 ) ORDER BY navigation_order asc  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0026s ]
+SQL: SELECT DISTINCT  categories.category_name,posts.post_title,posts.post_id FROM as_categories_relationships relationships,as_categories categories,as_posts posts WHERE ( relationships.category_id=categories.category_id and relationships.post_id = posts.post_id and categories.block_news=3 ) ORDER BY navigation_order asc  [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000573s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001902s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002172s ]
+
+[ 2015-02-10T12:27:18+08:00 ] 192.168.0.109 /qzas/admin.php?m=Admin&c=Post&a=editPost&pid=125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002017s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_id = 125 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=2 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_name,categories.category_id,relationships.relation_id FROM as_categories_relationships relationships,as_categories categories WHERE ( relationships.category_ID=categories.category_ID and relationships.post_id = 125 )  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000373s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000669s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002262s ]
+
+[ 2015-02-10T12:27:19+08:00 ] 192.168.0.109 /qzas/admin.php?m=Admin&c=Post&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002428s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `as_posts` WHERE ( post_status=0 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_status=0 ) ORDER BY post_date desc LIMIT 0,15   [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000259s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000534s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001902s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002349s ]
+
+[ 2015-02-10T12:27:21+08:00 ] 192.168.0.109 /qzas/admin.php?m=Admin&c=Post&a=editPost&pid=111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002135s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_id = 111 )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=2 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_name,categories.category_id,relationships.relation_id FROM as_categories_relationships relationships,as_categories categories WHERE ( relationships.category_ID=categories.category_ID and relationships.post_id = 111 )  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000466s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000764s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001977s ]
+
+[ 2015-02-10T12:27:44+08:00 ] 192.168.0.109 /qzas/admin.php?m=Admin&c=Post&a=editPost&pid=111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002149s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_id = 111 )  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `as_categories` WHERE ( block_news=0 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_name,categories.category_id,relationships.relation_id FROM as_categories_relationships relationships,as_categories categories WHERE ( relationships.category_ID=categories.category_ID and relationships.post_id = 111 )  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000366s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000642s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002353s ]
+
+[ 2015-02-10T12:44:47+08:00 ] 192.168.0.109 /qzas/admin.php?m=Admin&c=Post&a=addCateRelation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002215s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `as_categories_relationships` WHERE `post_ID` = 111 AND `category_ID` = 16  [ RunTime:0.0017s ]
+SQL: INSERT INTO `as_categories_relationships` (`post_ID`,`category_ID`) VALUES ('111','16') [ RunTime:0.0413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002287s ]
+
+[ 2015-02-10T12:44:48+08:00 ] 192.168.0.109 /qzas/admin.php?m=Admin&c=Post&a=saveNews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001992s ]
+NOTIC: [8] Uninitialized string offset: 0 /volume1/web/qzas/Application/Admin/Controller/PostController.class.php 第 97 行.
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0041s ]
+SQL: UPDATE `as_posts` SET `post_author`='1',`post_content`='',`post_general`='',`post_modified`='2015-02-10 12:44:48',`post_modified_gmt`='2015-02-10 04:44:48',`post_title`='文章8',`pic_news`='0',`pic_news_url`='',`post_status`='0' WHERE ( post_id=111 ) [ RunTime:0.0335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002042s ]
+
+[ 2015-02-10T22:36:16+08:00 ] 192.168.0.109 /qzas/admin.php?m=Admin&c=Post&a=editPost&pid=111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002345s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_id = 111 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order=0 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `as_categories_relationships` [ RunTime:0.0025s ]
+SQL: SELECT DISTINCT  categories.category_name,categories.category_id,relationships.relation_id FROM as_categories_relationships relationships,as_categories categories WHERE ( relationships.category_ID=categories.category_ID and relationships.post_id = 111 )  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000392s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000684s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.147689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001947s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002412s ]
+
+[ 2015-02-10T22:36:22+08:00 ] 192.168.0.109 /qzas/admin.php?m=Admin&c=Post&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003127s ]
+SQL: SHOW COLUMNS FROM `as_posts` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `as_posts` WHERE ( post_status=0 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `as_posts` WHERE ( post_status=0 ) ORDER BY post_date desc LIMIT 0,15   [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000566s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001904s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002287s ]
+
+[ 2015-02-10T22:36:23+08:00 ] 192.168.0.109 /qzas/admin.php?m=Admin&c=Post&a=postNews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002035s ]
+SQL: SHOW COLUMNS FROM `as_categories` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `as_categories` WHERE ( navigation_order=0 )  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000371s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000660s ]
+NOTIC: [8] Undefined variable: my_categories /volume1/web/qzas/Runtime/Cache/Admin/4d62051bd760c07d3e7f18f3b6df53a7.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001785s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002212s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002549s ]
+
